@@ -57,3 +57,8 @@ student_resource/dataset/
 # Generated Pipeline Outputs (>100MB GitHub limit)
 output/*
 !output/.gitkeep
+
+# Local datasets and generated/model artifacts
+data/
+output_v1/
+work/
