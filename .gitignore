@@ -62,3 +62,6 @@ output/*
 data/
 output_v1/
 work/
+work_v2/
+output_v2/
+*.log
