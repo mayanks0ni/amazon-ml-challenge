@@ -1,0 +1,14 @@
+{
+  "macro_f05": 0.5263323123385044,
+  "singleton_acc": 0.6285714285714286,
+  "non_singleton_f05": 0.4712804805207759,
+  "num_entities": 100.0,
+  "num_singletons": 35.0,
+  "raw_ece": 0.011349093161704817,
+  "calibrated_ece": 8.240703718514982e-06,
+  "raw_brier": 0.027560944798713714,
+  "calibrated_brier": 0.02596533534222145,
+  "raw_logloss": 0.09130967761435282,
+  "calibrated_logloss": 0.08112248684981364,
+  "optimal_beta": 1.25
+}

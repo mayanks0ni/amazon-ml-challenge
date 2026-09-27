@@ -1,0 +1,8 @@
+{
+  "val_macro_f05": 0.9946953380126013,
+  "val_non_singleton_f05": 0.9948109797001711,
+  "val_singleton_acc": 0.9927007299270073,
+  "val_blocking_pc": 0.9980163360560094,
+  "val_blocking_ceiling": 0.9994674747295714,
+  "optimal_beta": -0.09999999999999987
+}

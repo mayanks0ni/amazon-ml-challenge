@@ -1,0 +1,2 @@
+-r code/business_entity_resolution/requirements.txt
+-e code/business_entity_resolution

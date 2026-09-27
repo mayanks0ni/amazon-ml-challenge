@@ -1,0 +1,46 @@
+# Final competition configuration for CPFC Business Entity Resolution
+data:
+  train_dir: "dataset/train"
+  test_dir: "dataset/test"
+  output_dir: "output"
+
+blocking:
+  budget_m: 60
+  top_k_c2: 30
+  top_k_c3: 30
+  top_k_c4: 15
+  top_k_c5: 20
+  window_c6: 10
+  enable_c7_embedding: false
+  enable_s2_s3_expansion: true
+  keep_if_channels_ge: 2
+
+training:
+  n_splits: 5
+  seed: 42
+  learning_rate: 0.03
+  num_leaves: 63
+  min_data_in_leaf: 50
+  bagging_fraction: 0.8
+  feature_fraction: 0.7
+  lambda_l2: 1.0
+  n_estimators: 3000
+  early_stopping_rounds: 150
+  hard_negative_multiplier: 2.0
+
+calibration:
+  method: "isotonic"
+  cross_fitted: true
+
+decision:
+  rule: "expected_f05"
+  beta: 0.0
+  lam: 0.03
+  exclusivity:
+    enabled: true
+    delta: 0.20
+    shrink: 0.50
+    hard: false
+
+experiments:
+  dir: "experiments"

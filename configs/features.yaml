@@ -1,0 +1,38 @@
+# Feature groups configuration and monotone constraints
+feature_groups:
+  name_similarities: true
+  address_similarities: true
+  cross_field: true
+  rarity_idf: true
+  group_context_stage2b: true
+
+monotone_constraints:
+  name_exact_norm: 1
+  name_exact_core: 1
+  name_exact_fold: 1
+  name_lev_ratio_core: 1
+  name_jw_core: 1
+  name_token_set_ratio_core: 1
+  name_soft_tfidf: 1
+  idf_shared_max: 1
+  idf_shared_sum: 1
+  acronym_match: 1
+  legal_form_eq: 1
+  alt_name_max_sim: 1
+  legal_form_conflict: -1
+  idf_unshared_max: -1
+  digits_in_name_conflict: -1
+  addr_exact_eq: 1
+  addr_token_set_ratio: 1
+  postal_eq: 1
+  house_eq: 1
+  unit_eq: 1
+  nums_jaccard: 1
+  addr_idf_shared_max: 1
+  house_conflict: -1
+  unit_conflict: -1
+  postal_conflict: -1
+  addr_idf_unshared_sum: -1
+  same_country: 1
+  name_sim_x_addr_sim: 1
+  name_hi_addr_lo: -1
